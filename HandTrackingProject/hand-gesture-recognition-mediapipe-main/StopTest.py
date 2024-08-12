@@ -178,8 +178,8 @@ def main():
                     point_history_classifier_labels[most_common_fg_id[0][0]],
                 )
 
-                LR = handedness.classification[0].label[0:]
-                kpcl = keypoint_classifier_labels[hand_sign_id]
+                LR = handedness.classification[0].label[0:] #String for Left or Right hand
+                kpcl = keypoint_classifier_labels[hand_sign_id] #String for hand gesture being used
                 if kpcl == "Stop":
                     print('Num1:',Num1)
                     if Num1 < 30:
